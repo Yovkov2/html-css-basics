@@ -1,0 +1,37 @@
+body {
+  background: #f9f7cf;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 480px;
+  background: #f4dcbb;
+  padding: 15px 5px 15px; 
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.subtitle {
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+}
+
+main p,
+footer p {
+  margin: 0 10px 0.75rem 10px;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 0.5rem;
+}

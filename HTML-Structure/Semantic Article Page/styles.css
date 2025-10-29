@@ -1,0 +1,85 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.55;
+  background: #eaf4c7; 
+  color: #222;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.page {
+  width: 540px;
+  background: #eef7cf;
+  border: 1px solid #c8d39f;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.post__header {
+  background: #e2efb6;
+  border-bottom: 1px solid #d4e59d;
+  padding: 12px 14px;
+}
+
+.post__header h1 {
+  font-size: 1.35rem;
+  margin: 0 0 4px 0;
+}
+
+.post__meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.post__content {
+  padding: 12px 14px;
+}
+
+.post__content p { margin: 0 0 0.8rem 0; }
+
+.comments {
+  background: #e9f3c0;
+  border-top: 1px solid #d4e59d;
+  margin-top: 8px;
+}
+
+.comments > h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 10px 14px;
+  border-bottom: 1px solid #dbe7ae;
+}
+
+.comment {
+  padding: 10px 14px;
+  border-bottom: 1px solid #dbe7ae;
+}
+
+.comment:last-of-type { border-bottom: none; }
+
+.comment__meta {
+  font-size: 0.92rem;
+  color: #3d3d3d;
+  margin-bottom: 6px;
+}
+
+.comment .author { font-weight: 600; text-transform: capitalize; }
+.comment .dot { margin: 0 6px; }
+
+/* Footer link */
+.more {
+  padding: 12px 14px 16px;
+  border-top: 1px solid #d4e59d;
+  background: #eef7cf;
+}
+
+.more__link {
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+}
+.more__link:focus,
+.more__link:hover { outline: none; border-bottom-style: solid; }

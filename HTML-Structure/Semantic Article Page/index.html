@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semantic Article Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <article class="post">
+      <header class="post__header">
+        <h1>Apple</h1>
+        <p class="meta">
+          Published:
+          <time datetime="2008-10-06">06 October, 2008</time>
+        </p>
+      </header>
+
+      <section class="post__content">
+        <p>
+          An apple is an edible fruit produced by an apple tree (Malus pumila).
+          Apple trees are cultivated worldwide and are the most widely grown
+          species in the genus <em>Malus</em>. The tree originated in Central Asia,
+          where its wild ancestor, <em>Malus sieversii</em>, is still found today.
+        </p>
+        <p>
+          Apples have been grown for thousands of years in Asia and Europe and
+          were brought to North America by European colonists. Apples have
+          religious and mythological significance in many cultures.
+        </p>
+      </section>
+
+      <footer class="post__footer">
+        <p>
+          Apple cultivars are bred for various tastes and uses: eating fresh,
+          cooking, and cider production. Major apple producers include China,
+          the United States, Poland and Turkey.
+        </p>
+      </footer>
+    </article>
+
+    <section class="comments" aria-labelledby="comments-title">
+      <header class="comments__header">
+        <h2 id="comments-title">Comments</h2>
+      </header>
+
+      <article class="comment">
+        <header class="comment__meta">
+          <h3>Posted by: <span class="author">Apple Lover</span></h3>
+          <time datetime="2009-10-06T21:50">6 October 2009, 21:50</time>
+        </header>
+        <p>Great article—my favorite fruit are Granny Smiths.</p>
+      </article>
+
+      <article class="comment">
+        <header class="comment__meta">
+          <h3>Posted by: <span class="author">Orchard.org blog</span></h3>
+          <time datetime="2010-04-23T02:25">23 April 2010, 02:25</time>
+        </header>
+        <p>
+          Nice write-up! Don’t miss our chart of popular cultivars to grow.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
