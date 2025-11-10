@@ -1,0 +1,24 @@
+main {
+    width: 900px;
+    height: 140px;
+    box-sizing: border-box;
+    position: relative;
+}
+main img {
+    float: left;
+    border-right: 1px solid #d1d1d1;
+    margin-right: 19px;
+    padding-right: 19px;
+}
+main p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e2e2e;
+    text-align: justify;
+    margin: 0;
+}
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
