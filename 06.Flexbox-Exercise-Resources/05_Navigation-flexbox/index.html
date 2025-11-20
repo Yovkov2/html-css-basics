@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation - Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 3rem;
+            background-color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .page {
+            max-width: 70vw;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;                    
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgb(0, 0, 0);  
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;                    
+            gap: 1.5rem;
+        }
+
+        header a {
+            text-decoration: none;
+            color: rgb(0, 153, 0);            
+            font-size: 0.9rem;
+        }
+
+        main h2 {
+            margin-top: 0;
+        }
+
+        main p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <h1>SITE TITLE</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Heading level 1</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae sem ac
+            lacus tristique ullamcorper. Quisque bibendum, enim in scelerisque fermentum,
+            ligula urna feugiat eros, eu facilisis sem arcu sit amet ligula.
+        </p>
+        <p>
+            Curabitur fermentum, odio id porttitor interdum, justo turpis interdum est, sit
+            amet pharetra odio lacus non nisi. Duis lobortis, mauris eget congue pharetra,
+            dolor est pellentesque magna, nec vehicula tortor justo vel orci.
+        </p>
+    </main>
+</div>
+</body>
+</html>

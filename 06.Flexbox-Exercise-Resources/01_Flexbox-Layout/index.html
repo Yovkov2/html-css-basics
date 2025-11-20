@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #EEE;
+      padding: 5rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+      padding: 2rem;
+      background-color: #FFF;
+      border-radius: 0.4rem;
+      color: #000;
+      box-sizing: border-box;
+    }
+
+    header,
+    footer {
+      flex-basis: 100%;
+    }
+
+    main {
+      flex: 8 1 40rem;
+      margin-top: 2rem;
+      margin-right: 1rem;
+    }
+
+    aside {
+      flex: 2 1 20rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>HEADER</header>
+  <main>MAIN</main>
+  <aside>ASIDE</aside>
+  <footer>FOOTER</footer>
+</body>
+</html>

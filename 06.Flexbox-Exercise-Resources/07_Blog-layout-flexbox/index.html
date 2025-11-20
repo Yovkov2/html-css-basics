@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Layout - Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 3rem;
+            background-color: rgb(238, 238, 238);     
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 3rem;
+            background-color: #fff;
+            border: 1px solid #000;
+
+            display: flex;                            
+            flex-wrap: wrap;                          
+        }
+
+        h1, h2 {
+            font-family: Georgia, serif;              
+        }
+
+        header {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            letter-spacing: 0.1rem;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        article {
+            margin-bottom: 2.5rem;
+        }
+
+        .post-layout {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .post-layout img {
+            display: block;
+            background-color: rgb(255, 255, 255);    
+            padding: 0.25rem;
+            border: 1px solid #ccc;
+        }
+
+        .sidebar {
+            min-width: 140px;
+            font-size: 0.85rem;
+        }
+
+        .sidebar h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 1rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: rgb(0, 153, 0);                    
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        blockquote {
+            margin: 1rem 0;
+            padding: 0.75rem 1rem;
+            border-left: 4px solid #ccc;
+            font-style: italic;
+            font-family: Georgia, serif;             
+            background-color: #f5f5f5;
+        }
+
+        .post-two-layout {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .post-two-layout .text {
+            flex: 2;
+        }
+
+        .post-two-layout blockquote {
+            flex: 1;
+            margin: 0;
+        }
+
+        .post-three-layout {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .post-three-layout img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <h1>SITE TITLE</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Heading level 1</h2>
+            <div class="post-layout">
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, diam vel tristique
+                        fringilla, sapien felis pharetra eros, nec congue lorem augue vitae erat. Integer vel mi lectus.
+                        Donec viverra, lectus vitae aliquet molestie, metus nisl lacinia orci, at viverra lectus lorem at
+                        augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </p>
+                    <p>
+                        Vivamus non volutpat ex, non cursus justo. Sed in turpis a metus varius blandit. Sed interdum,
+                        neque id tempus dictum, orci ipsum euismod massa, id ullamcorper augue arcu sed lorem.
+                    </p>
+                </div>
+
+                <aside class="sidebar">
+                    <img src="images/Image1.jpg" alt="Post image 1" width="140" height="190">
+
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Travel</a></li>
+                    </ul>
+
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </article>
+
+        <article>
+            <h2>Heading level 2</h2>
+            <div class="post-two-layout">
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget cursus tortor. Maecenas
+                        mollis mi sem, ac ultrices velit tristique non. Nulla facilisi. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <p>
+                        Nam tincidunt, augue eget malesuada eleifend, nisl elit tincidunt arcu, vitae feugiat massa arcu
+                        nec nulla. Nunc ultricies turpis non elit cursus, eget viverra erat faucibus.
+                    </p>
+                </div>
+                <blockquote>
+                    “This is a sample blockquote used inside the article to demonstrate the styling required for the
+                    layout.”
+                </blockquote>
+            </div>
+        </article>
+
+        <article>
+            <h2>Heading level 2</h2>
+            <div class="post-three-layout">
+                <img src="images/Image2.jpg" alt="Post image 2">
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et dui in justo tincidunt varius.
+                        Integer id accumsan mauris. Ut fringilla et sapien a finibus. Proin dignissim, nisl et sagittis
+                        volutpat, felis erat scelerisque ante, quis mattis lectus urna a nisl.
+                    </p>
+                    <p>
+                        Curabitur iaculis, mi eget semper finibus, lorem metus placerat tortor, id vulputate augue nunc
+                        non lorem.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+
+</body>
+</html>

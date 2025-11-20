@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards with CSS Columns and Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 3rem 0;
+            background-color: rgb(238, 238, 238);
+            font-family: Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 0 0 1.5rem;
+            font-size: 1.2rem;
+        }
+
+
+        .cards {
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card-body {
+            padding: 1rem 1.1rem 1.2rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .card-body h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+        }
+
+        .card-body p {
+            margin: 0 0 0.8rem;
+        }
+
+        .card-body small {
+            color: #777;
+        }
+
+
+        .cards-masonry {
+            columns: 3 260px;
+            column-gap: 1.5rem;
+        }
+
+        .cards-masonry .card {
+            break-inside: avoid;
+        }
+
+
+        .cards-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .cards-flex .card {
+            flex: 0 0 260px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <section class="cards">
+        <h2>Layout Masonry</h2>
+        <div class="cards-masonry">
+            <article class="card">
+                <img src="images/Image1.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc in felis
+                        sollicitudin, vitae euismod mi faucibus.
+                    </p>
+                    <small>Seen in Paris, France</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image2.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.
+                    </p>
+                    <small>Exploring hidden streets</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image3.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Curabitur pretium, metus eget commodo porta, odio lacus eleifend lorem, sed pulvinar elit odio
+                        et mi.
+                    </p>
+                    <small>A view from the tower</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image4.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Donec dignissim, nisl ac fermentum sagittis, ipsum lectus pulvinar est, vitae placerat sem
+                        lectus vitae nunc.
+                    </p>
+                    <small>Morning walk in the park</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image3.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc in felis
+                        sollicitudin, vitae euismod mi faucibus.
+                    </p>
+                    <small>Paris skyline at dusk</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image2.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.
+                    </p>
+                    <small>Sunday market vibes</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image1.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Curabitur pretium, metus eget commodo porta, odio lacus eleifend lorem, sed pulvinar elit odio
+                        et mi.
+                    </p>
+                    <small>Along the river bank</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image4.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Donec dignissim, nisl ac fermentum sagittis, ipsum lectus pulvinar est, vitae placerat sem
+                        lectus vitae nunc.
+                    </p>
+                    <small>Bright leaves above</small>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="cards">
+        <h2>Layout Flex</h2>
+        <div class="cards-flex">
+            <article class="card">
+                <img src="images/Image1.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc in felis
+                        sollicitudin, vitae euismod mi faucibus.
+                    </p>
+                    <small>Seen in Paris, France</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image2.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.
+                    </p>
+                    <small>Exploring hidden streets</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image3.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Curabitur pretium, metus eget commodo porta, odio lacus eleifend lorem, sed pulvinar elit odio
+                        et mi.
+                    </p>
+                    <small>A view from the tower</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image4.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Donec dignissim, nisl ac fermentum sagittis, ipsum lectus pulvinar est, vitae placerat sem
+                        lectus vitae nunc.
+                    </p>
+                    <small>Morning walk in the park</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image3.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc in felis
+                        sollicitudin, vitae euismod mi faucibus.
+                    </p>
+                    <small>Paris skyline at dusk</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image2.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.
+                    </p>
+                    <small>Sunday market vibes</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image1.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Curabitur pretium, metus eget commodo porta, odio lacus eleifend lorem, sed pulvinar elit odio
+                        et mi.
+                    </p>
+                    <small>Along the river bank</small>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/Image4.jpg" alt="">
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>
+                        Donec dignissim, nisl ac fermentum sagittis, ipsum lectus pulvinar est, vitae placerat sem
+                        lectus vitae nunc.
+                    </p>
+                    <small>Bright leaves above</small>
+                </div>
+            </article>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 3rem;
+            background: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 65vw;
+            margin: 0 auto;
+            border: 1px solid #000;
+            background: #fff;
+
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+        }
+
+        .week {
+            flex: 3;
+            flex-direction: column;
+        }
+
+        .notes {
+            flex: 1;
+            flex-direction: column;          
+            justify-content: space-between;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        span {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        .label {
+            width: 100%;
+        }
+
+        .days span {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="week">
+        <span class="label">Workweek</span>
+
+        <div class="row days">
+            <span>1 Monday</span>
+            <span>2 Tuesday</span>
+            <span>3 Wednesday</span>
+            <span>4 Thursday</span>
+            <span>5 Friday</span>
+        </div>
+
+        <span class="label">Weekend</span>
+
+        <div class="row days">
+            <span>6 Saturday</span>
+            <span>7 Sunday</span>
+        </div>
+    </section>
+
+    <section class="notes">
+        <span class="label">REMINDERS</span>
+        <span class="label">SPECIAL DATES</span>
+    </section>
+</div>
+
+</body>
+</html>
