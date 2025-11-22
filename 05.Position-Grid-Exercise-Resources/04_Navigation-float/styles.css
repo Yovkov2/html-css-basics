@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+}
+
+.site-header {
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.site-title {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.top-nav {
+    float: right;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+.content {
+    overflow: hidden;
+}
+
+article {
+    float: left;
+    width: 620px;
+}
+
+.sidebar {
+    float: right;
+    width: 220px;
+    margin-top: 10px;
+}
+
+.sidebar section {
+    margin-bottom: 30px;
+}
+
+.sidebar h3 {
+    font: 1em/1.2 Georgia, serif;
+    margin: 0 0 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+h1,
+h2 {
+    font: 1em/1.2 Georgia, serif;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.article-image {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+}
+
+.article-image.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.article-image.left {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+blockquote {
+    margin: 20px 40px;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.author {
+    text-align: right;
+    font-style: italic;
+}
